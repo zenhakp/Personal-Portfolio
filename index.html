@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2f4c36cb89.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header"><strong>Home</strong></a></li>
+                <li><a href="#about"><strong>About</strong></a></li>
+                <li><a href="#services"><strong>Services</strong></a></li>
+                <li><a href="#portfolio"><strong>Portfolio</strong></a></li>
+                <li><a href="#contact"><strong>Contact</strong></a></li>
+                <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>WEB DEVELOPER</p>
+            <h1>Hi, I'm <span>Fathimathul Zenha.K.P</span><br> From Bengaluru</h1>
+            <p>As a dedicated web developer, I am driven by a passion<br>for creating sophisticated and effective web solutions.<br>My commitment lies in delivering engaging user<br> experiences by utilizing well-organized code and<br>innovative design methods.</p>
+        </div>
+    </div>
+</div>
+<!--------about---------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I specialize in building robust, user-centric web applications that not only look sleek but also function seamlessly. From responsive and intuitive user interfaces to scalable backend architectures, I enjoy every aspect of the development process. I'm particularly enthusiastic about UI/UX design, JavaScript frameworks, database optimization, etc.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')"><strong>Skills</strong></p>
+                    <p class="tab-links" onclick="opentab('experience')"><strong>Experience</strong></p>
+                    <p class="tab-links" onclick="opentab('education')"><strong>Education</strong></p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                        <li><span>Web Development</span><br>Web app Development</li>
+                        <li><span>App Development</span><br>Building Android/ios apps</li>
+                        <li><span> Languages</span><br>HTML (Advanced)<br>
+                            CSS (Intermediate)<br>
+                            Javascript (Beginner)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Web development Training at Coders Academy</li>
+                        <li><span>2023 - 2024</span><br>Team lead at StarApp LLC.</li>
+                        <li><span>2022 - 2023</span><br>A trainee at Axon Enterprise</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022</span><br>Web development Training at Coders Academy</li>
+                        <li><span>2021</span><br>MTech from IIT Madras</li>
+                        <li><span>2019</span><br>BTech from RV college</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------services------>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Crafting visually appealing and user-friendly websites that adapt 
+                    seamlessly across various devices (desktops, tablets, and mobile phones).</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop-simple"></i>
+                <h2>UI/UX Design</h2>
+                <p> Employing user research methodologies to understand user behavior, 
+                    preferences, and pain points, and using these insights to inform the design process.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>App Design</h2>
+                <p> Designing user interfaces for mobile applications with a focus on 
+                    intuitive navigation, aesthetics, and usability on various platforms (iOS, Android).</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!---------portfolio------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p> Designed and developed a cutting-edge social media application aimed at fostering 
+                        connections and interaction among users.</p>
+                    <a href="'#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p> Spearheaded the development of an innovative music streaming application, offering 
+                        a dynamic platform for music enthusiasts.</p>
+                    <a href="'#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="work-3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>Implemented a comprehensive catalog system, enabling users to browse, search, 
+                        and filter products seamlessly.</p>
+                    <a href="'#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!---------contact------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i>fathimathulzenha@gamil.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>9748483945</p>
+                <div class="social-icons">
+                    <a href="https://facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2" onclick="checkAndAlert()">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright &copy; Zenha <i class="fa-solid fa-heart"></i></p>
+    </div>
+</div>
+<script src="main.js"></script>
+    
+</body>
+</html>
